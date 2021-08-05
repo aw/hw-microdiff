@@ -14,6 +14,9 @@ It can be purchased as a kit **[from Tindie](https://www.tindie.com/products/245
 
 μDiff provides an easy way to reliably transfer power and a digital signal over a long-distance using an inexpensive RJ-45 cable.
 
+[![Watch a demo](https://user-images.githubusercontent.com/153401/128300194-b423a72b-3753-4d11-98fc-c7c09939c4a7.png)](
+https://www.youtube.com/watch?v=i-OBXi-Fx-U)
+
 It uses RS-485 differential signaling and 802.3af mode B pinouts to achieve this. The μDiff module can accept an input voltage between 8V-28V, and provides outputs of 5V and 3.3V. Both output voltages, GND, along with the RO, RE, DI, RE signals can be accessed through an 8-pin header.
 
 Current is limited to 1A with the default components, but can be upgraded to ~2A with a different 5V switching regulator and fuse. Beware of current limitations on the RJ-45 cable, it's typically ~700mA for an AWG26 shielded wire pair (2 wires).
