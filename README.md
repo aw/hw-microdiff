@@ -26,7 +26,7 @@ Current is limited to 1A with the default components, but can be upgraded to ~2A
   * Form factor 50mm x 44mm
   * Lead-free, RoHS compliant
   * Stackable with 4 grounded M3 holes
-  * Open Source Hardware under [CC BY-NC-SA 4.0](#License)
+  * Open Source Hardware under [CC BY-SA 4.0](#License)
   * Easy to source off-the-shelf through-hole components
   * On-board (SMD 0805) capacitors, resistors, and diodes
   * Simple passive design draws 0mA current when no devices are connected
@@ -54,4 +54,4 @@ I take no responsibility for any problems that may occur with your use of this P
 
 # License
 
-μDiff: Power+Data to LEDs and devices over RJ45 © 2021 by [Alexander Williams](https://a1w.ca/) is licensed under [_CC BY-NC-SA 4.0_ (Attribution-NonCommercial-ShareAlike 4.0 International)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+μDiff: Power+Data to LEDs and devices over RJ45 © 2021 by [Alexander Williams](https://a1w.ca/) is licensed under [_CC BY-SA 4.0_ (Attribution-ShareAlike 4.0 International)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
