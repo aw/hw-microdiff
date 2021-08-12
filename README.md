@@ -8,7 +8,11 @@ This project is also described in detail [on Hackaday.io](https://hackaday.io/pr
 
 It can be purchased as a kit **[from Tindie](https://www.tindie.com/products/24510/)**
 
-[![Buy a kit](https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png)](https://www.tindie.com/products/24510/)
+ [![Buy a kit](https://d2ss6ovg47m0r5.cloudfront.net/badges/tindie-mediums.png)](https://www.tindie.com/products/24510/)
+
+This project is [certified open hardware](https://certification.oshwa.org/jp000009.html):
+
+[![OSHW_mark_JP000009](https://user-images.githubusercontent.com/153401/129275894-ec9e520a-f5d3-463a-a676-4d8060423e29.png)](https://certification.oshwa.org/jp000009.html)
 
 # How it works
 
