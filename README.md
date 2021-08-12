@@ -40,7 +40,18 @@ Current is limited to 1A with the default components, but can be upgraded to ~2A
 
 # BOM (through-hole)
 
-TODO
+| Quantity | Item and Description | Datasheet |
+| :----: | :---- | :---- |
+| 1 | XPPower VR10S05 SIP3 5V 1A DC-DC switching regulator | [XPPower-VR10S05-5V-1A-voltage-regulator.pdf](datasheets/XPPower-VR10S05-5V-1A-voltage-regulator.pdf) |
+| 1 | Microchip MAX3088 RS-485 IC | [Microchip-MAX3088-transceiver.pdf](datasheets/Microchip-MAX3088-transceiver.pdf) |
+| 1 | RJ45 Connector | [Assmann-RJ45-connector.pdf](datasheets/Assmann-RJ45-connector.pdf) |
+| 1 | 2-pin 5.0mm screw terminal | |
+| 1 | 8-pin JST-XH male connector | |
+| 1 | 3-pin 2.54mm male or female header | |
+| 1 | 8-pin 2.54mm DIP socket | |
+| 1 | 500mA (1A trip) or 900mA (1.8A trip) resettable fuse | [Littelfuse_PTC_Radial_Leaded_RXEF-fuse-Datasheet.pdf](datasheets/Littelfuse_PTC_Radial_Leaded_RXEF-fuse-Datasheet.pdf) |
+| 1 | 120 ohm 1/4W resistor | |
+| 1 | 2-pole 2.54mm SPST DIP slide switch | [CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf](CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf) |
 
 # BOM (surface mount)
 
