@@ -51,7 +51,7 @@ Current is limited to 1A with the default components, but can be upgraded to ~2A
 | 1 | 8-pin 2.54mm DIP socket | |
 | 1 | 500mA (1A trip) or 900mA (1.8A trip) resettable fuse | [Littelfuse_PTC_Radial_Leaded_RXEF-fuse-Datasheet.pdf](datasheets/Littelfuse_PTC_Radial_Leaded_RXEF-fuse-Datasheet.pdf) |
 | 1 | 120 ohm 1/4W resistor | |
-| 1 | 2-pole 2.54mm SPST DIP slide switch | [CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf](CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf) |
+| 1 | 2-pole 2.54mm SPST DIP slide switch | [CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf](datasheets/CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf) |
 
 # BOM (surface mount)
 
