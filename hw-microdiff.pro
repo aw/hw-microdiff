@@ -1,4 +1,4 @@
-update=Fri 12 Aug 2022 11:43:53 AM JST
+update=Sat 13 Aug 2022 04:20:28 PM JST
 version=1
 last_client=kicad
 [general]
@@ -43,8 +43,8 @@ dPairWidth2=0.261112
 dPairGap2=0.2032
 dPairViaGap2=0.2032
 SilkLineWidth=0.15
-SilkTextSizeV=1
-SilkTextSizeH=1
+SilkTextSizeV=0.8999999999999999
+SilkTextSizeH=0.8999999999999999
 SilkTextSizeThickness=0.15
 SilkTextItalic=0
 SilkTextUpright=1
@@ -250,7 +250,7 @@ PageLayoutDescrFile=
 PlotDirectoryName=
 SubpartIdSeparator=0
 SubpartFirstId=65
-NetFmtName=Pcbnew
+NetFmtName=Spice
 SpiceAjustPassiveValues=0
 LabSize=50
 ERC_TestSimilarLabels=1

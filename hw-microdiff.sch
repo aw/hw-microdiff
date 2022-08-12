@@ -768,12 +768,12 @@ Wire Notes Line
 	700  4200 700  6400
 Wire Notes Line
 	5600 6400 5600 4200
-Text Notes 5750 5050 0    50   Italic 0
-*Notes:*\n\n   VIN / GND enable power through 8P8C connectors\n\n*Resistor Specifications:*\n\n  120R, ±1% 118.8Ω - 121.2Ω, 0805, 1/8W (125mW)\n  220R, ±1% 217.8Ω - 222.2Ω, 0805, 1/8W (125mW)\n  10K, ±1% 9.9kΩ - 10.1kΩ, 0805, 1/8W (125mW)\n  20K, ±1% 19.8kΩ - 20.2kΩ, 0805, 1/8W (125mW)
+Text Notes 5750 5150 0    50   Italic 0
+*Notes:*\n\n   VIN / GND enable power through 8P8C connectors\n\n*Resistor Specifications:*\n\n  120R, ±1% 118.8Ω - 121.2Ω, 0805, 1/8W (125mW)\n  220R, ±1% 217.8Ω - 222.2Ω, 0805, 1/8W (125mW)\n  4.7K, ±1% 4.653kΩ - 4.747kΩ, 0805, 1/8W (125mW)\n  10K, ±1% 9.9kΩ - 10.1kΩ, 0805, 1/8W (125mW)\n  20K, ±1% 19.8kΩ - 20.2kΩ, 0805, 1/8W (125mW)
 Wire Notes Line
 	5700 4200 7950 4200
 Wire Notes Line
-	5700 5100 7950 5100
+	5700 5250 7950 5250
 $Comp
 L Interface_UART:SP3485EN U3
 U 1 1 62F13D8E
@@ -926,12 +926,12 @@ P 1200 5100
 AR Path="/6311FF2C" Ref="R4"  Part="1" 
 AR Path="/63E575AB/6311FF2C" Ref="R?"  Part="1" 
 F 0 "R4" V 1100 5050 50  0000 L CNN
-F 1 "10K" V 1200 5030 50  0000 L CNN
+F 1 "4K7" V 1200 5030 50  0000 L CNN
 F 2 "Resistor_SMD:R_0805_2012Metric" V 1130 5100 50  0001 C CNN
 F 3 "~" H 1200 5100 50  0001 C CNN
 F 4 "" H 1200 5100 50  0001 C CNN "LCSC"
 F 5 "" H 1200 5100 50  0001 C CNN "LCSC Part #"
-F 6 "C17414" H 1200 5100 50  0001 C CNN "LCSC Part"
+F 6 "C17673" H 1200 5100 50  0001 C CNN "LCSC Part"
 	1    1200 5100
 	0    1    1    0   
 $EndComp
@@ -1128,8 +1128,170 @@ Wire Notes Line
 	2200 7400 700  7400
 Wire Notes Line
 	700  7400 700  6550
+Text Label 3100 6950 0    50   ~ 0
+5V
+$Comp
+L Connector:TestPoint TP2
+U 1 1 62FA4E67
+P 2650 7250
+F 0 "TP2" H 2708 7368 50  0000 L CNN
+F 1 "TP_GND" H 2708 7277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2850 7250 50  0001 C CNN
+F 3 "~" H 2850 7250 50  0001 C CNN
+	1    2650 7250
+	1    0    0    -1  
+$EndComp
+Text Label 2450 7250 0    50   ~ 0
+GND
+Text Label 4150 4850 0    50   ~ 0
+GND
+Wire Wire Line
+	2450 7250 2650 7250
+$Comp
+L Connector:TestPoint TP1
+U 1 1 62FBC60D
+P 2650 6950
+F 0 "TP1" H 2708 7068 50  0000 L CNN
+F 1 "TP_VIN" H 2708 6977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 2850 6950 50  0001 C CNN
+F 3 "~" H 2850 6950 50  0001 C CNN
+	1    2650 6950
+	1    0    0    -1  
+$EndComp
+Text Label 2450 6950 0    50   ~ 0
+VIN
+Wire Wire Line
+	2450 6950 2650 6950
+Wire Wire Line
+	3700 7250 3850 7250
+Text Label 3700 7250 0    50   ~ 0
+DI
+$Comp
+L Connector:TestPoint TP6
+U 1 1 62F9C2EF
+P 3850 7250
+F 0 "TP6" H 3908 7368 50  0000 L CNN
+F 1 "TP_DI" H 3908 7277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4050 7250 50  0001 C CNN
+F 3 "~" H 4050 7250 50  0001 C CNN
+	1    3850 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4300 6950 4550 6950
+Text Label 4300 6950 0    50   ~ 0
+DE_RE
+$Comp
+L Connector:TestPoint TP7
+U 1 1 62F794B2
+P 4550 6950
+F 0 "TP7" H 4608 7068 50  0000 L CNN
+F 1 "TP_DE_RE" H 4608 6977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4750 6950 50  0001 C CNN
+F 3 "~" H 4750 6950 50  0001 C CNN
+	1    4550 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3700 6950 3850 6950
+Text Label 3700 6950 0    50   ~ 0
+RO
+$Comp
+L Connector:TestPoint TP5
+U 1 1 62F6DF61
+P 3850 6950
+F 0 "TP5" H 3908 7068 50  0000 L CNN
+F 1 "TP_RO" H 3908 6977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 4050 6950 50  0001 C CNN
+F 3 "~" H 4050 6950 50  0001 C CNN
+	1    3850 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 7250 3250 7250
+Text Label 3100 7250 0    50   ~ 0
+3V3
+$Comp
+L Connector:TestPoint TP4
+U 1 1 62F6AB72
+P 3250 7250
+F 0 "TP4" H 3308 7368 50  0000 L CNN
+F 1 "TP_3V3" H 3308 7277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3450 7250 50  0001 C CNN
+F 3 "~" H 3450 7250 50  0001 C CNN
+	1    3250 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3100 6950 3250 6950
+$Comp
+L Connector:TestPoint TP3
+U 1 1 62F6119B
+P 3250 6950
+F 0 "TP3" H 3308 7068 50  0000 L CNN
+F 1 "TP_5V" H 3308 6977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 3450 6950 50  0001 C CNN
+F 3 "~" H 3450 6950 50  0001 C CNN
+	1    3250 6950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:TestPoint TP8
+U 1 1 6301059D
+P 4550 7250
+F 0 "TP8" H 4608 7368 50  0000 L CNN
+F 1 "TP_GND" H 4608 7277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_1.5x1.5mm" H 4750 7250 50  0001 C CNN
+F 3 "~" H 4750 7250 50  0001 C CNN
+	1    4550 7250
+	1    0    0    -1  
+$EndComp
+Text Label 4350 7250 0    50   ~ 0
+GND
+Wire Wire Line
+	4350 7250 4550 7250
 Wire Notes Line
-	7950 4200 7950 5100
+	5700 4200 5700 5250
 Wire Notes Line
-	5700 4200 5700 5100
+	7950 4200 7950 5250
+Wire Wire Line
+	5100 6950 5250 6950
+Text Label 5100 6950 0    50   ~ 0
+a1
+$Comp
+L Connector:TestPoint TP9
+U 1 1 63070A07
+P 5250 6950
+F 0 "TP9" H 5308 7068 50  0000 L CNN
+F 1 "TP_A1" H 5308 6977 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5450 6950 50  0001 C CNN
+F 3 "~" H 5450 6950 50  0001 C CNN
+	1    5250 6950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5100 7250 5250 7250
+Text Label 5100 7250 0    50   ~ 0
+b1
+$Comp
+L Connector:TestPoint TP10
+U 1 1 630751F1
+P 5250 7250
+F 0 "TP10" H 5308 7368 50  0000 L CNN
+F 1 "TP_B1" H 5308 7277 50  0000 L CNN
+F 2 "TestPoint:TestPoint_Pad_D1.5mm" H 5450 7250 50  0001 C CNN
+F 3 "~" H 5450 7250 50  0001 C CNN
+	1    5250 7250
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	2350 6550 2350 7400
+Wire Notes Line
+	2350 7400 5600 7400
+Wire Notes Line
+	5600 7400 5600 6550
+Wire Notes Line
+	5600 6550 2350 6550
+Text Notes 2400 6650 0    50   ~ 0
+Test Points
 $EndSCHEMATC

@@ -1,10 +1,10 @@
-# μDiff: Power+Data to LEDs and devices over RJ45
+# μDiff: 10mbps over 1km on a single pair of wires
 
-A simple 50mmx44mm module to route power and differential signals (RS-485) over RJ-45.
+A simple 46mmx22.5mm module to route power and differential signals (RS-485) over RJ-45.
 
-![Stacked modules](https://user-images.githubusercontent.com/153401/128298233-b51e0acc-333e-47a2-b127-6a38895b0770.JPG)
+![Stacked modules](https://user-images.githubusercontent.com/153401/214183057-3592cd9a-0469-4d58-a876-4878347ee25c.JPG)
 
-This project is also described in detail [on Hackaday.io](https://hackaday.io/project/179020-diff-powerdata-to-leds-and-devices-over-rj45)
+This project is also described in detail [on Hackaday.io](https://hackaday.io/project/179020-10mbps-over-1km-on-a-single-pair-of-wires)
 
 It can be purchased as a kit **[from Tindie](https://www.tindie.com/products/24510/)**
 
@@ -21,52 +21,54 @@ This project is [certified open hardware](https://certification.oshwa.org/jp0000
 [![Watch a demo](https://user-images.githubusercontent.com/153401/128300194-b423a72b-3753-4d11-98fc-c7c09939c4a7.png)](
 https://www.youtube.com/watch?v=i-OBXi-Fx-U)
 
-It uses RS-485 differential signaling and 802.3af mode B pinouts to achieve this. The μDiff module can accept an input voltage between 8V-28V, and provides outputs of 5V and 3.3V. Both output voltages, GND, along with the RO, RE, DI, RE signals can be accessed through an 8-pin header.
+It uses RS-485 differential signaling and 802.3af Power-over-Ethernet pinouts to achieve this. It can accept an input voltage between 6.5V-12V, and provides outputs of 5V and 3.3V. All signals and voltages can be accessed through a 10-pin header. 
 
-Current is limited to 1A with the default components, but can be upgraded to ~2A with a different 5V switching regulator and fuse. Beware of current limitations on the RJ-45 cable, it's typically ~700mA for an AWG26 shielded wire pair (2 wires).
+Current is limited to 1A. Beware of current limitations on the RJ-45 cable, it's typically ~350mA for an AWG26 shielded wire. 
 
 # PCB features
 
-  * Form factor 50mm x 44mm
+  * Form factor 46mm x 22.5mm
   * Lead-free, RoHS compliant
-  * Stackable with 4 grounded M3 holes
+  * Stackable with 4xM2 holes (1x grounded)
   * Open Source Hardware under [CC BY-SA 4.0](#License)
   * Easy to source off-the-shelf through-hole components
-  * On-board (SMD 0805) capacitors, resistors, and diodes
-  * Simple passive design draws 0mA current when no devices are connected
-  * Thermal vias in strategic locations
+  * On-board (SMD 0603, 0805) capacitors, resistors, and diodes
+  * Solder bridge jumpers to enable fail-safe biasing, termination, grounding.
 
-![board-v03](https://user-images.githubusercontent.com/153401/128298045-6c3d7a2e-5431-4dee-8e91-cdd2cbb3bcd3.png)
+![board-v05](https://user-images.githubusercontent.com/153401/214203490-ce8a3398-d726-4aa2-9e23-1e5256972bca.JPG)
+
+### Top view
+
+![PCB Top](images/hw-microdiff-v05-layout-top.jpg)
+
+### Bottom view
+
+![PCB Bottom](images/hw-microdiff-v05-layout-bottom.jpg)
+
+See [images](images/) for more views.
 
 # BOM (through-hole)
 
 | Quantity | Item and Description | Datasheet |
 | :----: | :---- | :---- |
-| 1 | XPPower VR10S05 SIP3 5V 1A DC-DC switching regulator | [XPPower-VR10S05-5V-1A-voltage-regulator.pdf](datasheets/XPPower-VR10S05-5V-1A-voltage-regulator.pdf) |
-| 1 | Microchip MAX3088 RS-485 IC | [Microchip-MAX3088-transceiver.pdf](datasheets/Microchip-MAX3088-transceiver.pdf) |
 | 1 | RJ45 Connector | [Assmann-RJ45-connector.pdf](datasheets/Assmann-RJ45-connector.pdf) |
-| 1 | 2-pin 5.0mm screw terminal | |
-| 1 | 8-pin JST-XH male connector | |
-| 1 | 3-pin 2.54mm male or female header | |
-| 1 | 8-pin 2.54mm DIP socket | |
-| 1 | 500mA (1A trip) or 900mA (1.8A trip) resettable fuse | [Littelfuse_PTC_Radial_Leaded_RXEF-fuse-Datasheet.pdf](datasheets/Littelfuse_PTC_Radial_Leaded_RXEF-fuse-Datasheet.pdf) |
-| 1 | 120 ohm 1/4W resistor | |
-| 1 | 2-pole 2.54mm SPST DIP slide switch | [CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf](datasheets/CUI-DS01-254-S-02BE-dip-switch-datasheet.pdf) |
+| 1 | 10-pin (2x5) 2.54mm male of female header | |
+| 1 | 3-pin (1x3) 2.54mm male or female header | |
 
 # BOM (surface mount)
 
-TODO
+See [datasheets](datasheets/)
 
 # Schematic
 
-The schematic is available [here](schematic-v03.pdf)
+The schematic is available [here](schematic-v05.pdf)
 
 # Notes
 
-This PCB was designed with [Kicad](https://kicad.org/) v5.1.9 from the `debian buster-backports` repository.
+This PCB was designed with [Kicad](https://kicad.org/) v6.0 from the `debian buster-backports` repository.
 
 I take no responsibility for any problems that may occur with your use of this PCB or design files. Create and use at your own risk.
 
 # License
 
-μDiff: Power+Data to LEDs and devices over RJ45 © 2021 by [Alexander Williams](https://a1w.ca/) is licensed under [_CC BY-SA 4.0_ (Attribution-ShareAlike 4.0 International)](https://creativecommons.org/licenses/by-nc-sa/4.0/).
+μDiff: 10mbps over 1km on a single pair of wires © 2021~ by [Alexander Williams](https://a1w.ca/) is licensed under [_CC BY-SA 4.0_ (Attribution-ShareAlike 4.0 International)](https://creativecommons.org/licenses/by-nc-sa/4.0/).

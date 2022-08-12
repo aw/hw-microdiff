@@ -5,17 +5,29 @@ Comment,Designator,Footprint,LCSC Part #
 Diode 40V/3A Schottky diode,D1,D_SMA,C8678
 Blue LED Light emitting diode,D2,LED_0603_1608Metric,C72041
 Fuse 24V/1A Fuse,F1,Fuse_1206_3216Metric,C910830
-M3_MountingHole Mounting Hole without connection,"H2,H3,H4",MountingHole_2.2mm_M2_ISO14580_Pad,
-"Power Input Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)",J1,PinHeader_1x02_P2.54mm_Vertical,
-"Header 2x4P Generic connector, double row, 02x04, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",J2,PinSocket_2x04_P2.54mm_Vertical,
+M2_MountingHole Mounting Hole without connection,"H1,H2,H3,H4",MountingHole_2.2mm_M2_ISO14580_Pad,
+"Power Input Generic connector, single row, 01x03, script generated (kicad-library-utils/schlib/autogen/connector/)",J1,PinSocket_1x03_P2.54mm_Vertical,
+"Header 2x5P Generic connector, double row, 02x05, odd/even pin numbering scheme (row 1 odd numbers, row 2 even numbers), script generated (kicad-library-utils/schlib/autogen/connector/)",J2,PinSocket_2x05_P2.54mm_Vertical,
 "8P8C RJ connector, 8P8C (8 positions 8 connected), RJ31/RJ32/RJ33/RJ34/RJ35/RJ41/RJ45/RJ49/RJ61, Shielded",J3,RJ45_Hanrun_HR911105A,
-"GND EN Jumper, normally open, small symbol",JP1,PinHeader_1x02_P2.54mm_Vertical,
-"VIN EN Jumper, normally open, small symbol",JP2,PinHeader_1x02_P2.54mm_Vertical,
-"drive EN Jumper, normally open, small symbol",JP3,SW_DIP_SPSTx01_Slide_9.78x4.72mm_W7.62mm_P2.54mm,
+"GND EN Jumper, 2-pole, open",JP1,PinHeader_1x02_P2.54mm_Vertical,
+"VIN EN Jumper, 2-pole, open",JP2,PinHeader_1x02_P2.54mm_Vertical,
+"Grounding Solder Jumper, 2-pole, open",JP3,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
+"Biasing- Solder Jumper, 2-pole, open",JP4,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
+"Biasing+ Solder Jumper, 2-pole, open",JP5,SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
+"Terminating Solder Jumper, 2-pole, open","JP6,JP7",SolderJumper-2_P1.3mm_Open_RoundedPad1.0x1.5mm,
 220R Resistor,R1,R_0805_2012Metric,C17557
-10K Resistor,"R2,R4,R6,R8",R_0805_2012Metric,
-20K Resistor,"R3,R7",R_0805_2012Metric_Pad1.20x1.40mm_HandSolder,
-120R Resistor,R5,R_Axial_DIN0207_L6.3mm_D2.5mm_P10.16mm_Horizontal,
+10K Resistor,R2,R_0805_2012Metric,C17414
+390R Resistor,"R3,R4",R_0805_2012Metric,C17655
+100R Resistor,R5,R_0805_2012Metric,C17408
+TP_VDD test point,TP1,TestPoint_Pad_1.5x1.5mm,
+TP_GND test point,"TP2,TP4,TP6,TP10",TestPoint_Pad_1.5x1.5mm,
+TP_5V test point,TP3,TestPoint_Pad_1.5x1.5mm,
+TP_3V3 test point,TP5,TestPoint_Pad_1.5x1.5mm,
+TP_RO test point,TP7,TestPoint_Pad_D1.5mm,
+TP_DI test point,TP8,TestPoint_Pad_D1.5mm,
+TP_DE_RE test point,TP9,TestPoint_Pad_D1.5mm,
+TP_A1 test point,TP11,TestPoint_Pad_D1.5mm,
+TP_B1 test point,TP12,TestPoint_Pad_D1.5mm,
 "5V/1A 1A Low Dropout regulator, positive, 5.0V fixed output, SOT-223",U1,SOT-223,C6187
 "3.3V/1A 1A Low Dropout regulator, positive, 3.3V fixed output, SOT-223",U2,SOT-223,C6186
 "RS-485 Industrial 3.3V Low Power Half-Duplex RS-485 Transceiver 10Mbps, SOIC-8",U3,SOIC-8_3.9x4.9mm_P1.27mm,C8963
